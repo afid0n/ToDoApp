@@ -12,9 +12,15 @@
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#clock{
+    font-size: 60px;
+    color: aliceblue;
 }
 .todo-box{
     background-color: white;
@@ -70,6 +76,7 @@
 .task-container{
     display: flex;
     flex-direction: column;  
+    
 }
 #task{
     display: flex;
