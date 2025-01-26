@@ -15,6 +15,7 @@
 
 <body>
     <div class="todo-wrapper">
+        <div id="clock"> 00:00:00</div>
         <div class="todo-box">
             <h4>Todo App</h4>
             <form class="todo-add">
@@ -22,31 +23,31 @@
                 <button id="add-btn"><i class="fa-solid fa-plus"></i></button>
             </form>
             <div class="todo-render">
-            <form class="todo-search">
-                <input type="text" placeholder="Search todo">
-                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <div class="todo-filter-sort">
-            <select name="filter" id="tasks-filter">
-                <option value="all-tasks" selected>All Tasks</option>
-                <option value="achieved">Completed</option>
-                <option value="pending">Pending</option>
-            </select>
-            <select name="sort" id="tasks-sort">
-                <option value="new-to-old" selected>Newest to Oldest</option>
-                <option value="old-to-new">Oldest to Newest</option>
-            </select>
-        </div>
-        </div>
+                <form class="todo-search">
+                    <input type="text" placeholder="Search todo">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="todo-filter-sort">
+                    <select name="filter" id="tasks-filter">
+                        <option value="all-tasks" selected>All Tasks</option>
+                        <option value="completed">Completed</option>
+                        <option value="pending">Pending</option>
+                    </select>
+                    <select name="sort" id="tasks-sort">
+                        <option value="new-to-old">Newest to Oldest</option>
+                        <option value="old-to-new" selected>Oldest to Newest</option>
+                    </select>
+                </div>
+            </div>
             <ul class="task-container">
-                <li id="task">
-                    <span>hhn</span>
+                <!-- <li id="task">
+                    <span></span>
                     <div class="list-btns">
                         <button id="check-btn"><i class="fa-solid fa-check"></i></button>
                         <button id="trash-btn"><i class="fa-solid fa-trash"></i></button>
                         <button id="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
                     </div>
-                </li>
+                </li> -->
             </ul>
 
             <div class="pending-tasks">
@@ -57,9 +58,9 @@
     </div>
 
     <!-- sweet alert -->
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- script js -->
-    <script type="module" src="./assets/js/validation.js"></script>
+    <script type="module" src="./assets/js/todos.js"></script>
 </body>
 
 </html>
